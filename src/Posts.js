@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
-
-
+import {Post} from './Post'
 
 async function fetchAPI(){
     const response = await fetch('http://localhost:8080/api/posts?page=1') 
@@ -21,10 +20,10 @@ export function Posts(){
     if (posts.length === 0){
         return ("Hold on")
         
-    } else {    
-        var post = posts[1];
-        console.log(post);
-
+    } else {  
+        for(post of posts)  
+        <Post props = {post}/>
+   
         return (
             <ol>
                 <li>
