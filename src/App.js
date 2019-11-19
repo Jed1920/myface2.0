@@ -1,8 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { Home } from './Home';
-import { allPosts } from './Posts';
-import { postLL } from './Posts';
+import { Posts } from './Posts';
+
 import './App.scss';
 import {
   BrowserRouter as Router,
@@ -16,8 +16,7 @@ function App() {
         <Navbar/>
         <Switch>
           <Route path="/posts">
-            <postLL/>
-            <allPosts/>
+            <Posts/>
           </Route>
           <Route path="/users">
             <div>Users</div>
@@ -31,4 +30,3 @@ function App() {
 }
 
 export default App;
-
