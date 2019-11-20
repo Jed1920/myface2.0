@@ -1,0 +1,31 @@
+.userProfileImage{
+    border-radius:50%;
+    width:90%;
+    max-width:200px;
+    min-width:100px;
+    margin:5px;
+}
+
+.userBannerImage{
+    width:90%;
+    min-width:300px;
+}
+
+.userList{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.userListItem{
+    margin:10px;
+    list-style:none;
+    padding-inline-start: 0px;
+    border:2px solid #282c34;
+    border-radius:30px;
+    background-color:#282c34;
+    width:200px;
+    font-size:20px;
+    color:#ff7b00;
+    text-align:center;
+}
