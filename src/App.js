@@ -1,7 +1,8 @@
 import React from 'react';
 import Navbar from './Navbar';
 import { Home } from './Home';
-import { Users } from './Users';
+import { Users, SingleUser} from './Users';
+import { CreateUser } from './CreateUser';
 import { AllPosts } from './AllPost';
 
 import './App.scss';
@@ -16,11 +17,15 @@ function App() {
     <Router>
         <Navbar/>
         <Switch>
-          {/* <Route path="/posts/:id">
-              <IndivPostMain/>
-          </Route> */}
+          
           <Route path="/posts">
               <AllPosts/>
+          </Route>
+          <Route path="/users/create">
+              <CreateUser/>
+          </Route>
+          <Route path="/users/:id">
+              <SingleUser/>
           </Route>
           <Route path="/users">
             <Users/>

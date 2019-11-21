@@ -1,35 +1,80 @@
 .postProfileImage{
     border-radius:50%;
-    width:20%;
-    max-width:100px;
+    max-width:150px;
     min-width:50px;
     padding: 10px;
-    display:inline-block;
-}
-
-
-.postMessageImage{
-    width:50%;
-    max-width:500px;
-    min-width:300px;
+    display:block;
 }
 
 .postList{
     width:90%;
-    max-width:800px;
     min-width:400px;
+    text-align:center;
+    :hover{
+        font-weight:bold;
+    }
 }
 
 .postListItem{
     margin:10px;
     list-style: none;
-    border:2px solid #282c34;
-    border-radius:20px;
+}
+
+.name{
+    color:#ff7b00;
 }
 
 .message{
-    position: relative;;
-    top:0;
-    right: 0;
-    width:50%;
+    position: relative;
+    bottom: 71px;
+    left: 40px;
+    width: 70%;
+    display: inline-block;
+    border:2px solid #282c34;
+    border-radius:20px;
+    padding:10px;
+}
+
+.msgUser{
+    display:inline-block;
+    text-align: center;
+    background-color: #282c34;
+    border-radius:20px;
+}
+
+.messageOpen{
+    width: 70%;
+    max-width:300px;
+    display: inline-block;
+    border:2px solid #282c34;
+    border-radius:20px;
+    padding:10px;
+    margin-right:50px;
+    position: relative;
+    bottom:100px;
+}
+
+.messageImageOpen{
+    margin-top:50px;
+    width:30%;
+    max-width:300px;
+    min-width:300px;
+    display:inline-block;
+}
+
+.msgUserOpen{
+    display:inline-block;
+    border-radius:20px;
+    border:3px solid #282c34;
+}
+
+.profiles{
+    text-align:center;
+}
+
+.sendSvg{
+    width:20%;
+    max-width:200px;
+    min-width:100px;
+    margin:10px;
 }
