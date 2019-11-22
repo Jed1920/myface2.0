@@ -23,11 +23,14 @@ export function CreateUser(){
             const response = await fetch("http://localhost:8080/api/users/create" ,{
                 method: 'POST',
                 body: formData
-            });
-            console.log(response)
+                });
+                console.log(response.headers);
+            return handleRedirect(await response);
+
         } catch (error){
             console.error('Error',error);
         }
+        
     }
 
     return (
@@ -55,4 +58,11 @@ export function CreateUser(){
             </label>
         </form>
     );
+}
+
+function handleRedirect(resp){
+    if (resp.status === 201){
+        console.log(resp);
+        window.location.href='http://localhost:3000/users';
+    }
 }
